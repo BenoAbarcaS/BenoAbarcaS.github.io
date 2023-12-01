@@ -1,32 +1,35 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TBATE MAP</title>
-        <script src="scrips.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBATE MAP</title>
+    <script src="scrips.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-    <img id="imagen" src="https://i.imgur.com/TnrAxLJ.png" alt="dicathen map" usemap="#dicathen" width="100%"
+
+    <img id="imagen" src="src/img/dicathenloctrans.png"" alt=" dicathen map" usemap="#dicathen" width="100%"
         height="auto">
 
     <map name="dicathen">
-        <area id="Elenoir" shape="rect" onClick="clickear('Elenoir')">
-        <area id="Sapin" shape="rect" onClick="clickear('Sapin')">
-        <area id="Darv" shape="rect" onClick="clickear('Darv')">
-        <area id="Beast" shape="rect" onClick="clickear('Beast')">
+        <area id="Elenoir" shape="circle" onClick="clickear('Elenoir')">
+        <area id="Sapin" shape="circle" onClick="clickear('Sapin')">
+        <area id="Darv" shape="circle" onClick="clickear('Darv')">
+        <area id="Beast" shape="circle" onClick="clickear('Beast')">
     </map>
 
     <div id="cartaElenoir" class="contenedor carta oculto">
         <div id="title">
             <h2>Kingdom of Elenoir</h2>
         </div>
-        <div class="imgdiv"><img src="https://i.imgur.com/lyz9L8Z.png" style="width:100%;border-radius: 10px;"></div>
+        <div class="imgdiv"><img src="src/img/elenoir.png" style="width:100%;border-radius: 10px;"></div>
         <br>
         <div class="botones">
-            <a onclick="mostrarDiv('div1', this)"><b>Description</a><br>
-            <a onclick="mostrarDiv('div2', this)">Geography</a><br>
-            <a onclick="mostrarDiv('div3', this)">Government</a></b>
+            <a id="enlaceDiv1" onclick="mostrarDiv('div1', this)"><b>Description</b></a><br>
+            <a id="enlaceDiv2" onclick="mostrarDiv('div2', this)"><b>Geography</b></a><br>
+            <a id="enlaceDiv3" onclick="mostrarDiv('div3', this)"><b>Government</b></a>
         </div><br>
         <div id="div1" class="ocultodiv">
             <div>
@@ -36,35 +39,37 @@
         </div>
         <div id="div2" class="ocultodiv">
             <div>
-                <p>The Kingdom of Elenoir is established deep within the Forest of Elshire of Dicathen. It is located on
+                <p><b>The Kingdom of Elenoir</b> is established deep within the Forest of Elshire of Dicathen. It is located on
                     the northern border of the continent where a dense array of branches that fan out from the trees
                     cover most of the city in a canopy of shade. The capital of the Kingdom of Elenoir is the City of
                     Zestier, where the royal family resides. The capital is filled with numerous floating orbs of light
                     surrounding the city, creating a warm, luminescent glow. Buildings are made from jade-like material
                     intertwined by large, tall trees, and homes are built on unnaturally thick branches extending out of
                     massive trunks. The elven city is covered in a lush field of soft moss, with only narrow sidewalks
-                    and the main road paved with smooth stone.
+                    and the main road paved with smooth stone.<br><br>
 
                     Within the City of Zestier, a large enormous tree made of white stone inhabiting the home of the
                     royal family. The interior of the castle had two curved staircases that created a circle, with a
-                    grand chandelier made from the same orbs of light that surrounded the city, floating in the center.
+                    grand chandelier made from the same orbs of light that surrounded the city, floating in the center.<br><br>
                 </p>
             </div>
         </div>
         <div id="div3" class="ocultodiv">
             <div>
-                <p>The Kingdom of Elenoir is a monarchy, which was ruled by Alduin Eralith prior to his death.<br>
+                <p>The Kingdom of Elenoir is a monarchy, which was ruled by Alduin Eralith prior to his death.<br><br>
 
-                    <b>Elven Royalty</b>
+                    <b>Elven Royalty</b><br>
+                    <div class="imgdiv"><img src="src/img/elenoirloyalty.png" style="width:70%;border-radius: 10px;"></div><br>
                     Elven royalty is dressed in fine clothing with golden accessories across their attire, signifying
-                    their wealth. Both the king and queen wear golden leaflet crowns on top of their heads.<br>
+                    their wealth. Both the king and queen wear golden leaflet crowns on top of their heads.<br><br>
 
-                    <b>Elven Warriors</b>
+                    <b>Elven Warriors</b><br><br>
+                    <div class="imgdiv"><img src="src/img/elenoirwarrior.png" style="width:70%;border-radius: 10px;"></div><br>
                     Elven warriors guard the gates to the Kingdom of Elenoir and are dressed in coordinated black suits
                     with green trimmings and a golden shoulder guard on their left shoulder. They carry a golden rapier
                     strapped to their waist along with a black sash hung across their right shoulder. The elven warriors
                     wear black fingerless gloves along with thick black armor hidden beneath their black buttoned up
-                    cloak.
+                    cloak.<br><br><br><br>
                 </p>
             </div>
         </div><button class="cerrar">X</button>
@@ -74,12 +79,12 @@
         <div id="title">
             <h2>Kingdom of Sapin</h2>
         </div>
-        <div class="imgdiv"><img src="https://i.imgur.com/wcmKZdW.png" style="width:100%;border-radius: 10px;"></div>
+        <div class="imgdiv"><img src="src/img/sapin.png" style="width:100%;border-radius: 10px;"></div>
         <br>
         <div class="botones">
-            <a onclick="mostrarDiv('div1', this)"><b>Description</a><br>
-            <a onclick="mostrarDiv('div2', this)">Geography</a><br>
-            <a onclick="mostrarDiv('div3', this)">Government</a></b>
+            <a id="enlaceDiv1" onclick="mostrarDiv('div1', this)"><b>Description</b></a><br>
+            <a id="enlaceDiv2" onclick="mostrarDiv('div2', this)"><b>Geography</b></a><br>
+            <a id="enlaceDiv3" onclick="mostrarDiv('div3', this)"><b>Government</b></a>
         </div><br>
         <div id="div1" class="ocultodiv">
             <div>
@@ -91,9 +96,117 @@
             </div>
         </div>
         <div id="div2" class="ocultodiv">
-
+            <b>Ashber Town</b><br><br>
+            <div class="imgdiv"><img src="src/img/ashbornmarket.png" style="width:70%;border-radius: 10px;"></div><br>
+            This town of Ashber was more of a glorified outpost, seeing that there were no roads or buildings. People
+            walked on the main dirt trail, where there were tents on both sides with various merchants and salesmen
+            selling all sorts of things—from common, everyday necessities to things Arthur couldn’t help but raise a
+            brow at, like weapons, armor, and rocks... shining rocks!<br><br>
+            <b>Valden City</b><br>
+            While operating in the city of Valden, Reynolds Leywin fell in love with an Adventurer Guild hall exam
+            proctor named Alice Leywin, who he later married.
+            <br><br>
+            <b>Xyrus City</b><br><br>
+            <div class="imgdiv"><img src="src/img/xyruscity.png" style="width:70%;border-radius: 10px;"></div><br>
+            Xyrus City is a major city in the Kingdom of Sapin situated on a floating island above the center of
+            Dicathen. Arthur read in a book about the creation story of Xyrus City. According to the book, this floating
+            piece of land was built by an ancient organization of conjurers for the sole purpose of housing the most
+            prestigious Mage Academy. A city was later built around the academy and both the City and the academy were
+            named after the leader of the organization - Xyrus. Nevertheless, the truth is that Xyrus City was
+            created by the Djinn, which was mentioned later in the story.
+            <br><br>
+            <b>Grand Mountains</b><br>
+            Between the Forest of Elshire and the Kingdom of Sapin lies the Grand Mountain range which spans across
+            roughly 90% of the continent, separating the North and East from the West and South. This mountain range is
+            the place where Arthur Leywin and his family were attacked by a group of bandits.
+            <br><br>
+            <b>Dragonspine Inn</b><br>
+            The Dragonspine Inn is where Arthur and Jasmine decided to go pick up some money. Arthur ended up getting
+            challenged by a B-Rank Adventurer and Arthur cuts his fingers off.
+            <br><br><br><br>
         </div>
-        <div id="div3" class="ocultodiv">Contenido del Div 3</div><button class="cerrar">X</button>
+        <div id="div3" class="ocultodiv">
+            The Kingdom of Sapin is a monarchy, which is ruled by the Glayder Family.<br><br>
+            <b>Human Royalty</b><br><br>
+            <div class="imgdiv"><img src="src/img/humanloyalty.png" style="width:70%;border-radius: 10px;"></div><br>
+            Human Royalty is dressed in fine clothing with golden accessories across their attire, signifying their
+            wealth. Both the king and queen wear crowns on top of their heads.
+            <br><br>
+            <b>Human Warriors</b><br><br>
+            <div class="imgdiv"><img src="src/img/humanwarrior.png" style="width:70%;border-radius: 10px;"></div><br>
+            The Royal Knight Guards were Knight armour and seem to be Augmenters, except for Sebastian who was not only
+            a Conjurer, but also dressed differently from the rest.
+            <br><br>
+            <b>Hierarchy</b><br>
+            This kingdom is a place of discrimination and classification. The hierarchical roots imbedded into this land
+            would never truly disappear. Normal humans were considered second-rate people, while even amongst mages,
+            augmenters were discriminated against by conjurers. It went further than that where, unless one was a
+            deviant or a dual element specialist, some elements were considered "higher class" than others.
+            <br><br>Slavery is still a thing in the Kingdom of Sapin unlike Arthur’s past world where slavery was
+            abolished hundreds of years ago.<br><br>There also exists a division between nobles and commoners in this
+            country.
+            <br><br><br><br>
+        </div><button class="cerrar">X</button>
+    </div>
+
+    <div id="cartaDarv" class="contenedor carta oculto">
+        <div id="title">
+            <h2>Kingdom of Darv</h2>
+        </div>
+        <div class="imgdiv"><img src="src/img/darv.png" style="width:100%;border-radius: 10px;"></div>
+        <br>
+        <div class="botones">
+            <a id="enlaceDiv1" onclick="mostrarDiv('div1', this)"><b>Description</b></a><br>
+            <a id="enlaceDiv2" onclick="mostrarDiv('div2', this)"><b>Geography</b></a><br>
+            <a id="enlaceDiv3" onclick="mostrarDiv('div3', this)"><b>Government</b></a>
+        </div><br>
+        <div id="div1" class="ocultodiv">
+            <div>
+                <p></p>
+            </div>
+        </div>
+        <div id="div2" class="ocultodiv">
+            <div>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div id="div3" class="ocultodiv">
+            <div>
+                <p>
+                </p>
+            </div>
+        </div><button class="cerrar">X</button>
+    </div>
+
+    <div id="cartaBeast" class="contenedor carta oculto">
+        <div id="title">
+            <h2>Beast Glades</h2>
+        </div>
+        <div class="imgdiv"><img src="src/img/beast.png" style="width:100%;border-radius: 10px;"></div>
+        <br>
+        <div class="botones">
+            <a id="enlaceDiv1" onclick="mostrarDiv('div1', this)"><b>Description</b></a><br>
+            <a id="enlaceDiv2" onclick="mostrarDiv('div2', this)"><b>Geography</b></a><br>
+            <a id="enlaceDiv3" onclick="mostrarDiv('div3', this)"><b>Government</b></a>
+        </div><br>
+        <div id="div1" class="ocultodiv">
+            <div>
+                <p></p>
+            </div>
+        </div>
+        <div id="div2" class="ocultodiv">
+            <div>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div id="div3" class="ocultodiv">
+            <div>
+                <p>
+                </p>
+            </div>
+        </div><button class="cerrar">X</button>
     </div>
 
 </body>
